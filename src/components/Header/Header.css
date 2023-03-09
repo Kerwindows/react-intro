@@ -1,9 +1,15 @@
 .header {
-  height: 80px;
+  min-height: 80px;
   background-color: #11ab84;
 }
 .header__title {
   font-size: 30px;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+}
+.header__paragraph {
+  font-size: 18px;
   color: #fff;
   text-align: center;
   line-height: 80px;

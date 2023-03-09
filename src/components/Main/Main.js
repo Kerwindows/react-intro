@@ -1,13 +1,16 @@
 import React from "react";
 import "./Main.css";
 
-function Main({ handleClick }) {
+function Main({ handleClick1, handleClick2 }) {
   return (
-    <div className="container">
+    <div className="main">
       {/* <Form isRegistered = {userIsRegistered} /> */}
-      Hello
-      <button className="header__button" onClick={handleClick}>
-        Click
+      <h1 className="main__title">Hello</h1>
+      <button className="main__button" onClick={handleClick2}>
+        Header
+      </button>
+      <button className="main__button" onClick={handleClick1}>
+        Footer
       </button>
     </div>
   );

@@ -6,17 +6,22 @@ import Footer from "../Footer/Footer";
 
 function App() {
   // let userIsRegistered = false;
-  const [string, setString] = useState([]);
+  const [footerString, setFooterString] = useState("You did not click me yet");
+  const [headerString, setHeaderString] = useState("You did not click me yet");
 
-  function handleClick() {
-    setString("You clicked me!");
+  function handleClick1() {
+    setFooterString("You clicked me!");
+  }
+
+  function handleClick2() {
+    setHeaderString("I was also clicked");
   }
 
   return (
     <>
-      <Header title="This is a Header" />
-      <Main handleClick={handleClick} />
-      <Footer word={string} />
+      <Header title="This is a Header" headerString={headerString} />
+      <Main handleClick1={handleClick1} handleClick2={handleClick2} />
+      <Footer word={footerString} />
     </>
   );
 }

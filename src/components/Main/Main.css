@@ -1,4 +1,4 @@
-.container {
+.main {
   margin: 10% auto;
   padding: 80px 0;
   text-align: center;
@@ -10,7 +10,12 @@
   height: 100%;
 }
 
-.container h1 {
+.main__title {
   font-size: 40px;
   font-weight: 200;
+}
+.main__button {
+  padding: 15px 25px;
+  color: #fff;
+  background: lightblue;
 }
